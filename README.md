@@ -33,4 +33,4 @@ Now that we have obtained the Mains application number of each student, the next
 * JS code is minified for performance optimization.
 * In my Python code, I have imported several libraries that are now redundant because I was experimenting with them. Additionally, the code that relied on these libraries is now commented out, allowing users to see alternate approaches.
 * All the files (PDFs) that I used for code extraction are provided in the same folder as the Python code.
-
+* The PDF named 2022_3 is a compressed copy of the original file, which was exceeding the GitHub file upload size limit. This may cause exceptions, so it is recommended to download the original copy of this PDF.
