@@ -1,10 +1,11 @@
 # DTU_Students_JEE-ADV-RANKS
-Jee(Advance) Rank Checker for DTU Students(Batch 2022 and Batch 2023)[DATA ANALYSIS PROJECT]-
+
+Jee(Advance) Rank Checker for DTU Students(Batch 2022 and Batch 2023)[DATA EXTRACTION PROJECT]-
 
 **How it works?**
 
 * Let's explore how this operates by using the example of the 2022 batch:
-* 
+
 * We are aware that DTU publicly releases the mapping of roll numbers, names, and application numbers for each student on their website. The application number mentioned in the PDF corresponds to the Main's roll number.
 
 * For the 2022 batch specifically, students' roll numbers are changed in the second year, with their branch information attached. DTU releases a mapping of old roll numbers to new roll numbers for this purpose. Therefore, we can utilize these two PDFs to obtain the student's name, their DTU second-year roll number, and their Mains application number.
@@ -32,5 +33,4 @@ Now that we have obtained the Mains application number of each student, the next
 * JS code is minified for performance optimization.
 * In my Python code, I have imported several libraries that are now redundant because I was experimenting with them. Additionally, the code that relied on these libraries is now commented out, allowing users to see alternate approaches.
 * All the files (PDFs) that I used for code extraction are provided in the same folder as the Python code.
-
 
