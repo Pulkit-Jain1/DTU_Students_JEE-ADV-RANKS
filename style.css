@@ -35,17 +35,18 @@ body {
   align-items: center;
   justify-content: space-evenly;
   width: 35%;
-
+  /* flex-wrap: wrap; */
   padding: 0.5rem 1rem;
   margin-bottom: 1.3rem;
   margin-top: 1.5rem;
 }
 
 .search-bar input[type="text"] {
-  flex: 1;
+  /* flex: 1; */
   color: white;
   border: 1px solid #ccc;
   border-radius: 20px;
+  width: 80%;
   padding: 0.5rem;
   font-size: 1rem;
   background-color: #31363f;
@@ -58,7 +59,8 @@ body {
   color: #fff;
   border: none;
   border-radius: 50%;
-  padding: 0.5rem 1rem;
+  width: 20%;
+  padding: 0.5rem 0.5rem;
   cursor: pointer;
   margin-left: 0.5rem;
 }
@@ -68,10 +70,17 @@ body {
 
 @media (max-width: 768px) {
   .search-bar {
-    width: 30%;
+    width: 50%;
+   
   }
   .search-bar input[type="text"] {
     font-size: 0.8rem;
+  }
+  .search-bar button{
+    width: 30%;
+  }
+  .search-bar input{
+    width: 70%;
   }
 }
 
@@ -275,6 +284,8 @@ h5 {
 .how ul {
   font-size: 0.85rem;
   line-height: 1.5;
+  padding: 10px;
+  padding-left: 20px;
 }
 
 .how ul li {
