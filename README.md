@@ -1,6 +1,4 @@
 # DTU_Students_JEE-ADV-RANKS
-# DTU_JEE_Adv_Ranks
-
 Jee(Advance) Rank Checker for DTU Students(Batch 2022 and Batch 2023)[DATA ANALYSIS PROJECT]-
 
 **How it works?**
