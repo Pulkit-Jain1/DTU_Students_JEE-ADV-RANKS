@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>JEE(Adv) Rank Checker</h1>
+        <!-- <h5 class = "subheading">Check Jee Adv. rank of DTU students by Name/Roll no.</h5> -->
+      </div>
+
+      <div class="toggle-search">
+        <label
+          ><input type="radio" name="searchType" value="criteria1" checked />
+          Search by Name</label
+        >
+        <label
+          ><input type="radio" name="searchType" value="criteria2" /> Search by
+          DTU Roll no.</label
+        >
+      </div>
+      <br />
+
+      <div class="toggle-search2">
+        <label
+          ><input type="radio" name="searchType2" value="criteria1" checked />
+          2022-2026 Batch</label
+        >
+        <label
+          ><input type="radio" name="searchType2" value="criteria2" /> 2023-2027
+          Batch</label
+        >
+      </div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search here....." id="search_value" />
+        <button id="search_button"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div id="myTableDiv">
+        <!-- Search results will be displayed here -->
+        <h7 class="no-padding-bottom leader">Leaderboards</h7>
+        <p class="h_2023">Batch 2023:</p>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>DTU_Roll_No</th>
+            <th>CRL</th>
+            <th>Category Rank</th>
+          </tr>
+
+          <tr>
+            <td>BHAVAY SINGLA</td>
+            <td>23/CS/108</td>
+            <td>2795</td>
+            <td>NA</td>
+          </tr>
+
+          <tr>
+            <td>NEAL SAXENA</td>
+            <td>23/CS/275</td>
+            <td>3545</td>
+            <td>NA</td>
+          </tr>
+
+          <tr>
+            <td>ANUBHAV NEGI</td>
+            <td>23/CS/068</td>
+            <td>3677</td>
+            <td>NA</td>
+          </tr>
+        </table>
+        <br />
+        <p class="h_2022">Batch 2022:</p>
+        <br />
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>DTU_Roll_No</th>
+            <th>CRL</th>
+            <th>Category Rank</th>
+          </tr>
+
+          <tr>
+            <td>ARYAN BANWALA</td>
+            <td>2K22/CO/99</td>
+            <td>1860</td>
+            <td>NA</td>
+          </tr>
+
+          <tr>
+            <td>PRATYANSH PATHAK</td>
+            <td>2K22/CO/343</td>
+            <td>2404</td>
+            <td>NA</td>
+          </tr>
+
+          <tr>
+            <td>PUNIT SUKHANI</td>
+            <td>2K22/CO/353</td>
+            <td>3154</td>
+            <td>NA</td>
+          </tr>
+        </table>
+      </div>
+      <div class="how">
+        <p class="no-padding-bottom">Important Directions to Use:</p>
+        <ul>
+          <li>
+            When searching for a student's rank by name, please enter at least 3
+            initial characters of the student's name. This will provide you with
+            the ranks of all students whose names begin with those letters (Both
+            Name and Roll No. are NOT case-sensetive).
+          </li>
+          <li>
+            Valid Format of Roll Numbers are: 2k22/XX/01, 2k22/XX/11,
+            2k22/XX/111, 23/XX/001, 23/XX/011, 23/XX/111
+          </li>
+          <li>
+            For 2023 Batch: Data of Spot Round Students is not available and
+            roll numbers are from before both branch upgradations done at DTU
+            level
+          </li>
+          <li>
+            For 2022 batch, second-year roll numbers are utilized. Those who did
+            not have mappings from old roll numbers to new roll numbers are not
+            included.
+          </li>
+          <li>
+            "Not Eligible" under the CRL column means that the student either
+            has not qualified in the mains by clearing their category cutoff, or
+            they have not registered for JEE Adv.
+          </li>
+          <li>
+            "Not Qualified" under the CRL column means that the student either
+            has not cleared the cutoff for the JEE(Adv) exam to obtain a valid
+            CRL/category rank, or they have registered for JEE Adv. but were
+            absent during the exam.
+          </li>
+          <li>
+            Only search by roll number can reveal the category of a student if
+            they have obtained a valid category rank. In such cases, the heading
+            'Category Rank' will automatically change to reflect the category to
+            which the student belongs if they have obtained a rank in that
+            category.
+          </li>
+          <li>
+            This tool can only determine the category rank and category of a
+            student if they belong to categories such as EWS, OBC, SC, or ST.
+            Other categories, such as PWD, are not supported by this tool.
+          </li>
+        </ul>
+      </div>
+      <div class="how">
+        <p class="no-padding-bottom no-padding-above">How it works?</p>
+        <ul>
+          <li>
+            This tool does NOT utilize any private or confidential data. All
+            data utilized by it is PUBLICALY available. You can verify the
+            source of this data and learn how to retrieve it from
+            <a
+              href="https://github.com/Pulkit-Jain1/DTU_JEE_Adv_Ranks/blob/a432cd8434667fbadfc73dd610a7b495586e650a/README.md"
+              >here</a
+            >
+          </li>
+          <li>
+            All code for data extraction and the website is open-source, so I
+            expect and hope that skilled programmers will create better projects
+            by writing improved code, adding more functionalities, using data in
+            more creative ways and creating better websites. Additionally, I
+            anticipate that someone will extend this for the 2021 batch and
+            upcoming 2024 batch. After all, this is the essence of open source,
+            isn't it?
+          </li>
+          <li>
+            Here are some interesting statistics from this data for the 2022
+            batch: Out of 2459 students, 1702 were eligible or registered for
+            the advanced exam. Among them, 426 students cleared the exam to
+            obtain a valid CRL, 84 of them achieved a rank of less than 10,000.
+          </li>
+          <li>
+            Similarly, for the 2023 batch: Out of 2493 students, 1822 were
+            eligible or registered for the advanced exam. Among them, 418
+            students cleared the exam to obtain a valid CRL, with 78 of them
+            achieving a rank of less than 10,000.
+          </li>
+        </ul>
+      </div>
+      <div id="creator-info">
+        <!-- Created by <a href="https://linkedin.com/in/pulkitjain7">Pulkit_Jain</a> -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
